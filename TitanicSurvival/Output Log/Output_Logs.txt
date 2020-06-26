@@ -1,0 +1,92 @@
+891
+
+   PassengerId  Survived  Pclass  \
+0            1         0       3   
+1            2         1       1   
+2            3         1       3   
+3            4         1       1   
+4            5         0       3   
+
+                                                Name     Sex   Age  SibSp  \
+0                            Braund, Mr. Owen Harris    male  22.0      1   
+1  Cumings, Mrs. John Bradley (Florence Briggs Th...  female  38.0      1   
+2                             Heikkinen, Miss. Laina  female  26.0      0   
+3       Futrelle, Mrs. Jacques Heath (Lily May Peel)  female  35.0      1   
+4                           Allen, Mr. William Henry    male  35.0      0   
+
+   Parch            Ticket     Fare Cabin Embarked  
+0      0         A/5 21171   7.2500   NaN        S  
+1      0          PC 17599  71.2833   C85        C  
+2      0  STON/O2. 3101282   7.9250   NaN        S  
+3      0            113803  53.1000  C123        S  
+4      0            373450   8.0500   NaN        S  
+
+max age: 80.0, min age: 0.42, average age: 29.69911764705882
+
+Age_survived_contingency table:
+       Survived  UnSurvived  Sum
+0-9          38          24   62
+10-19        41          61  102
+20-29        77         143  220
+30-39        73          94  167
+40-49        34          55   89
+50-59        20          28   48
+60-69         6          13   19
+70-80         1           6    7
+Sum         290         424  714
+
+Chi Value for age :
+17.427721605858945
+
+Sex ~ Survived Contigency:
+        Survived  UnSurvived  Sum
+female       233          81  314
+male         109         468  577
+Sum          342         549  891
+
+Chi Value for Sex:
+263.05057407065567
+
+Sex survival ratio: 
+Sex
+female    0.742038
+male      0.188908
+Name: Survived, dtype: float64
+
+z_value for sex: 16.218833930670097
+
+pclass vs survived Contigency:
+     Survived  UnSurvived  Sum
+1         136          80  216
+2          87          97  184
+3         119         372  491
+Sum       342         549  891
+
+Chi Value for Pclass: 102.88898875696057
+
+Pclass Survived Ratio: 
+Pclass
+1    0.629630
+2    0.472826
+3    0.242363
+Name: Survived, dtype: float64
+
+z value for pclass: 3.146897435776384
+
+Embarked vs survived contingency
+     Survived  UnSurvived  Sum
+C          93          75  168
+Q          30          47   77
+S         217         427  644
+Sum       340         549  889
+
+Chi Value for embarked 26.48914983923762
+
+Embarked Survived Ratio : 
+Embarked
+C    0.553571
+Q    0.389610
+S    0.336957
+Name: Survived, dtype: float64
+
+z value for Embarked: 2.3828199974549413
